@@ -1,0 +1,57 @@
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  /*-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);*/
+  /*-webkit-border-radius: 5px;*/
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(87, 87, 87, 0.7);
+  -webkit-border-radius: 10rem;
+}
+
+
+.scrollbar-y {
+  position: fixed;
+  top: 0; bottom: 0;
+  right: 0; width: 0.5rem;
+  background: #333;
+  display: block;
+  z-index: 10000000;
+  touch-action: none;
+  transition: height 0.5s ease;
+}
+
+.scrollbar-thumb-y {
+  position: absolute;
+  left: 0; right: 0;
+  height: 20%;
+  background: #fff;
+  touch-action: none;
+  user-select: none;
+  transition: height 0.5s ease;
+}
+
+.scrollbar-x {
+  position: fixed;
+  left: 0; right: 0.5rem;
+  bottom: 0; height: 0.5rem;
+  background: #333;
+  display: block;
+  z-index: 10000000;
+  touch-action: none;
+  transition: width 0.5s ease;
+}
+
+.scrollbar-thumb-x {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 20%;
+  background: #fff;
+  touch-action: none;
+  user-select: none;
+  transition: width 0.5s ease;
+}
